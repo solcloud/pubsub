@@ -1,0 +1,26 @@
+{
+    "name": "solcloud/pubsub",
+    "require": {
+        "php": ">=8.1",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+
+        "symfony/serializer": "^6.0",
+        "google/cloud-pubsub": "^1.41"
+    },
+    "autoload": {
+        "psr-4": {
+            "Solcloud\\PubSub\\": "src/"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-intl-normalizer": "*",
+        "symfony/polyfill-intl-grapheme": "*",
+        "symfony/polyfill-mbstring": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    }
+}
